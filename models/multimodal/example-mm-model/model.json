@@ -1,0 +1,20 @@
+{
+  "id": "thynkai/example-mm-model",
+  "name": "Example Multimodal Model",
+  "modality": "multimodal",
+  "description": "Example registry entry. Replace with a real model.",
+  "owner": {
+    "contributorId": "contrib:example",
+    "displayName": "Example Contributor"
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "version": "0.1.0",
+  "tags": [
+    "example",
+    "placeholder"
+  ],
+  "links": {
+    "repo": "https://github.com/thynkai/thynkai-models"
+  },
+  "license": "MIT"
+}

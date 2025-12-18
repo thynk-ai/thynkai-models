@@ -1,0 +1,23 @@
+{
+  "modelId": "thynkai/example-mm-model",
+  "version": "0.1.0",
+  "releasedAt": "2025-01-02T00:00:00.000Z",
+  "artifact": {
+    "uri": "https://example.com/artifacts/model.bin",
+    "digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "sizeBytes": 123456789,
+    "builtWith": {
+      "framework": "unknown",
+      "runtime": "node",
+      "notes": "Placeholder. Provide real build details."
+    }
+  },
+  "benchmarks": [
+    {
+      "benchmarkId": "bench:example",
+      "benchmarkVersion": "1.0.0",
+      "reportUri": "https://example.com/reports/run-1.json",
+      "notes": "Placeholder result reference."
+    }
+  ]
+}
