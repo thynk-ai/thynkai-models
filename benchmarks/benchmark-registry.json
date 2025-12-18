@@ -1,0 +1,14 @@
+{
+  "benchmarks": [
+    {
+      "id": "bench:example",
+      "name": "Example Benchmark",
+      "version": "1.0.0",
+      "description": "Placeholder benchmark entry. Replace with a real benchmark spec.",
+      "links": {
+        "homepage": "https://example.com/benchmark",
+        "spec": "https://example.com/benchmark/spec"
+      }
+    }
+  ]
+}
