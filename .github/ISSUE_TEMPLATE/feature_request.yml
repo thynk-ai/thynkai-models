@@ -1,0 +1,19 @@
+name: Feature request
+description: Propose improvements to registry formats or validation rules.
+labels: ["models", "discussion"]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Keep it specific and implementation-oriented.
+    validations:
+      required: true
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility
+      description: Will this break existing consumers of the registry?
+    validations:
+      required: true
