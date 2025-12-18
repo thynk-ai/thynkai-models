@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ThynkAI Model Version Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "modelId",
+    "version",
+    "releasedAt",
+    "artifact"
+  ],
+  "properties": {
+    "modelId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "releasedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "uri"
+      ],
+      "properties": {
+        "uri": {
+          "type": "string",
+          "minLength": 1
+        },
+        "digest": {
+          "type": "string"
+        },
+        "sizeBytes": {
+          "type": "number"
+        },
+        "builtWith": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "framework": {
+              "type": "string"
+            },
+            "runtime": {
+              "type": "string"
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "benchmarks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "benchmarkId": {
+            "type": "string"
+          },
+          "benchmarkVersion": {
+            "type": "string"
+          },
+          "reportUri": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

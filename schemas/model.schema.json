@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ThynkAI Model Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "modality",
+    "owner",
+    "createdAt",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "modality": {
+      "type": "string",
+      "enum": [
+        "text",
+        "vision",
+        "multimodal"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contributorId",
+        "displayName"
+      ],
+      "properties": {
+        "contributorId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "repo": {
+          "type": "string"
+        },
+        "paper": {
+          "type": "string"
+        },
+        "homepage": {
+          "type": "string"
+        }
+      }
+    },
+    "license": {
+      "type": "string"
+    }
+  }
+}
