@@ -1,0 +1,15 @@
+{
+  "name": "@thynkai/models",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Community model registry for ThynkAI (metadata + version history + benchmark notes).",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "ci": "npm run validate"
+  }
+}
